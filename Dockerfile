@@ -2,6 +2,7 @@ FROM docker:stable-dind
 
 RUN apk --update add \
     bash \
+    git \
     supervisor \
     openssh \
     docker-compose \
