@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ ! -f "/usr/bin/docker" ]; then
+    echo "Creating symbolic link for Jenkins/ Java"
+    ln -s /usr/local/bin/docker /usr/bin/docker
+fi
+
 echo Creating the user: $USER
 addgroup docker && \
 adduser -D $USER -Gdocker -s /bin/bash > /dev/null 2>&1

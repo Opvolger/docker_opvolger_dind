@@ -8,7 +8,7 @@ RUN apk --update add \
     docker-compose \
     openjdk11-jre
 
-# git and openjdk11-jre = for running jenkins-slave
+# openssh, git and openjdk11-jre = for running jenkins-slave
 
 RUN mkdir -p /var/log/supervisor
 
